@@ -1,7 +1,6 @@
 Steps taken to setup:
 
-yarn add knex
-yarn add pg
+    yarn
 
 
 
