@@ -9,9 +9,6 @@ const knex = require('knex')({
       socketPath: '',
       password: '',
       database: 'test_timezone',
-      ssl: '',
-      multipleStatements: true,
-      charset: 'utf8'
     },
   pool: {
     afterCreate: (conn, cb) => {
