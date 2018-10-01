@@ -1,5 +1,4 @@
 // Update with your config settings.
-require('dotenv/config');
 require('babel-register')({ presets: ['env'] });
 require('babel-polyfill');
 
