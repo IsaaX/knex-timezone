@@ -1,0 +1,43 @@
+{
+  "compact": false,
+  "presets": [
+    [
+      "env",
+      {
+        "modules": false,
+        "targets": {
+          "node": "current"
+        }
+      }
+    ],
+    "stage-0"
+  ],
+  "plugins": [
+    [
+      "transform-runtime",
+      {
+        "polyfill": false,
+        "regenerator": true
+      }
+    ],
+    "transform-decorators-legacy",
+    "transform-class-properties"
+  ],
+  "only": [
+    "*.jsx",
+    "*.js"
+  ],
+  "env": {
+    "production": {
+      "compact": true,
+      "presets": [
+        [
+          "minify",
+          {
+            "mangle": false
+          }
+        ]
+      ]
+    }
+  }
+}
